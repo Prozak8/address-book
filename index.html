@@ -15,15 +15,12 @@
  <form class="new-contact-form shadow py-20 pi-20 pb-20 mb-20 rounded" action="#">
 
   <div class="md:max-w-sm md:mx-auto p-8 rounded overflow-hidden shadow bg-white">
-    <h1 class="block uppercase flex-col mb-8 flex items-center">
-      Contacts
-    </h1>
-    <button class="block uppercase bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow">
-    Add Contact
-  </button>
-      
+      <h1 class="tracking-wide block uppercase flex-col mb-8 flex items-center">
+          Contacts
+        </h1>
+
       <div class="flex-col mb-8 flex items-center">
-          <label class="block uppercase" for="name">
+          <label class="text-2xl tracking-wide block uppercase" for="name">
             Name
           </label>
           <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="contact-name" name="name" type="text" placeholder="John Doe">
@@ -66,9 +63,13 @@
 
       <input class="block uppercase bg-blue hover:bg-blue-dark mb-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Save contact">   
     </form>
+
+      <button class="block uppercase bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow">
+      Add Contact
+    </button>
     <script src="./dist/bundle.js"></script>
-    <div class="contact-list">
   </div>
+    <div class="contact-list">
 </div>  
 
 </body>

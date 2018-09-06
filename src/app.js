@@ -6,19 +6,22 @@ const renderContacts = () => {
   if (contacts) {
     div.innerHTML = ''
     const ul = document.createElement('ul')
+    ul.className = "list-reset";
     contacts.forEach(contact => {
       let li = document.createElement('li')
       li.innerHTML = `
-      <div class="card">
-        <div class="image">
-          <img src="https://ca-address-book.herokuapp.com/images/pine.jpg" />
-        </div>
-        <div class="content">
-          <h1>${ contact.name }</h1>
-          <h2>${ contact.company}</h2>
-          <p>${ contact.notes }</p>
-          ${ contact.email } |
-          <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
+      <div class="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
+        <div class="sm:flex sm:items-center px-6 py-4">
+          <img class="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="https://www.bestfunnies.com/wp-content/uploads/2012/11/Ugly-Face-Man-2.jpg" />
+          <div class="text-center sm:text-left sm:flex-grow content">
+            <div class="mb-4">
+              <h1 class="text-xl leading-tight">${contact.name}</h1>
+              <h2 class="text-sm leading-tight text-grey-dark">${contact.company}</h2>
+              <p class="text-sm leading-tight text-grey-dark">${contact.notes}</p>
+              <p class="text-sm leading-tight text-red">${contact.email}</p>
+              <a class="text-sm leading-tight text-grey-dark" href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
+            </div>
+          </div>
         </div>
       </div>
     `
