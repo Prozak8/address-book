@@ -10,6 +10,62 @@
 </head>
 
 <body>
+  <div class="md:max-w-sm md:mx-auto p-8 rounded overflow-hidden shadow-lg">
+    <h1 class="text-center">
+      Contacts</h1>
+    <button class="bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow">
+    Add Contact</button>
+      
+    <form class="new-contact-form mb-6 rounded" action="#">
+      <div class="w-full flex flex-col mb-4">
+          <label class="" for="name">
+            Name</label>
+          <input class="bg-grey-lighter" id="contact-name" name="name" type="text">
+      </div>
+
+      <div class>
+        <label for="email">
+          Email</label>
+        <input class="bg-grey-lighter" id="contact-email" name="email" type="email">
+      </div>
+      
+      <div class=>
+      <label for="phone">
+        Phone</label>
+      <input class="bg-grey-lighter" id="contact-phone" name="phone" type="text">
+      </div>
+
+      <div>
+      <label for="company">
+        Company</label>
+      <input class="bg-grey-lighter" id="contact-company" name="company" type="text">
+    </div>
+      
+    <div>
+      <label for="notes">
+        Notes</label>
+      <textarea class="bg-grey-lighter" id="contact-notes" name="notes" type="text"></textarea>
+    </div>
+      
+    <div>
+      <label for="twitter">
+        Twitter</label>
+      <input class="bg-grey-lighter" id="contact-twitter" name="twitter" type="text">
+    </div>
+
+      <input class="save-contact" type="submit" value="Save contact">   
+    </form>
+    <script src="./dist/bundle.js"></script>
+    <div class="contact-list">
+  </div>
+</div>  
+
+</body>
+
+
+</html>
+
+<!-- <body>
   <h1>Contacts</h1>
   <button class="add-contact">Add Contact</button>
   <form class="new-contact-form" action="#">
@@ -34,4 +90,4 @@
 </body>
 
 
-</html>
+</html> -->
