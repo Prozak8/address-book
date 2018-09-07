@@ -12,8 +12,12 @@
 <body class="bg-blue">
   
 <div class="bg-blue-light">
-  
- <form class="new-contact-form shadow py-20 pi-20 pb-20 mb-20 rounded" action="#">
+
+    
+    <button class="add-contact block uppercase bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow">
+        Add Contact
+      </button>
+ <form class="new-contact-form shadow py-20 pi-20 pb-20 mb-20 rounded hidden" action="#">
 
   <div class="md:max-w-sm md:mx-auto p-8 rounded overflow-hidden shadow bg-white">
       <h1 class="tracking-wide block uppercase flex-col mb-8 flex items-center">
@@ -31,7 +35,7 @@
         <label class="block uppercase" for="email">
           Email
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="contact-email" name="email" type="email">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="contact-email" name="email" type="email" required=true >
       </div>
       
       <div class="flex-col mb-8 flex items-center">
@@ -63,14 +67,9 @@
     </div>
 
       <input class="save-contact block uppercase bg-blue hover:bg-blue-dark mb-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Save contact">   
-
-      
   </form>
-
-  <button class="add-contact block uppercase bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded shadow">
-      Add Contact
-    </button>
   </div>
+    
     <script src="./dist/bundle.js"></script>
   
     <div class="contact-list">

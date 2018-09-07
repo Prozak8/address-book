@@ -36,8 +36,11 @@ const renderContacts = () => {
   document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     const addContactForm = document.querySelector('.new-contact-form')
-   
-    addContactForm.addEventListener('submit', event => {
+    const addContactBtn = document.querySelector('.add-contact')
+
+    addContactBtn.addEventListener('click', () => addContactForm.classList.remove('hidden'))
+
+    addContactForm.addEventListener('click', event => {
       event.preventDefault()
       
   
@@ -64,6 +67,7 @@ const renderContacts = () => {
         let contacts = JSON.parse(storage.getItem('contacts')) || []
         contacts.push(contact)
         storage.setItem('contacts', JSON.stringify(contacts))        
+        addContactForm.classList.add('hidden')
         renderContacts()
         addContactForm.reset()
     })

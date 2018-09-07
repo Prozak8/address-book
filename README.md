@@ -1,4 +1,7 @@
 ## **Address Book Challenge [es2015]**
+
+INITIALIZE PROJECT WITH INDEX.HTML
+
 ### *Week 2 Javascript challenge*
 -------
 ### Prerequisites
