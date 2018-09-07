@@ -12,7 +12,7 @@ const renderContacts = () => {
       li.innerHTML = `
       <div class="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
         <div class="sm:flex sm:items-center px-6 py-4">
-          <img class="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="https://www.bestfunnies.com/wp-content/uploads/2012/11/Ugly-Face-Man-2.jpg" />
+          <img class="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="https://www.bestfunnies.com/wp-content/uploads/2012/11/Ugly-Face-Man-2.jpg"/>
           <div class="text-center sm:text-left sm:flex-grow content">
             <div class="mb-4">
               <h1 class="text-xl leading-tight">${contact.name}</h1>
@@ -61,11 +61,11 @@ const renderContacts = () => {
       }
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`);
         
-      let contacts = JSON.parse(storage.getItem('contacts')) || []
-      contacts.push(contact)
-      storage.setItem('contacts', JSON.stringify(contacts))
-      renderContacts()
-      addContactForm.reset()
+        let contacts = JSON.parse(storage.getItem('contacts')) || []
+        contacts.push(contact)
+        storage.setItem('contacts', JSON.stringify(contacts))        
+        renderContacts()
+        addContactForm.reset()
+    })
   })
-  })
-
+  // storage.setItem('contacts', JSON.stringify(contacts))
